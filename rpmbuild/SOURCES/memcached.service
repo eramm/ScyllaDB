@@ -1,0 +1,10 @@
+[Unit]
+Description=ScyllaDB Memcached Service
+
+[Service]
+Type=simple
+ExecStart=/opt/scylladb/sbin/memcached 
+ExecStop=/usr/bin/pkill memcached
+
+[Install]
+WantedBy=multi-user.target
