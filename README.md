@@ -9,3 +9,4 @@ Some challanges along the way:
 * It takes a ton of time/CPU/Memory to compile the Seastar library. Ultimatly I spun up a Docker image on a CentOS server in the GCE Cloud
 * Lots of dependencies need to be factored in.
 * You can't test (easily) systemd functionality in a Docker container 
+* memcached does not support a stop or start arg so I used pkill to kill it.
